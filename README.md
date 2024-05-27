@@ -6,8 +6,7 @@ There are two common types of FSMs:
   - Typically has more states compared to a Mealy machine.
   - Requires more logic to decode the outputs, leading to larger circuit delays.
   - Inputs may exist, but they don't directly affect the outputs.</br>
-
--Mealy FSM:
+- Mealy FSM:
   - Outputs depend on both the current state and the current input.
   - Typically has fewer states compared to a Moore machine.
   - Reacts faster to inputs and can check for input conditions in the same clock cycle.
