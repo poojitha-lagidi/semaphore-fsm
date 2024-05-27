@@ -13,20 +13,8 @@ There are two common types of FSMs:
 
 Both types of FSMs have their advantages and are suitable for different applications based on requirements for speed, complexity, and input-output relationships.
 </br>
-This repository contains a Verilog implementation of a traffic light controller using a FSM. The traffic light controller follows sequence of traffic lights as follows Red, Red-Yellow, Green, Yellow.
-
-Description
-The Verilog files included in this repository implement a traffic light controller module (semaphore_uk_fsm) and a testbench module (semaphore_uk_fsm_tb) to verify its functionality.
-
-semaphore_uk_fsm
-This module defines the traffic light controller FSM with the following states:
-
-OFF
-RED
-RED_YELLOW
-GREEN
-YELLOW
-The controller transitions between these states based on timing and external enable signals. Each state corresponds to a specific combination of traffic light outputs (red, red-yellow, green, yellow).
-
-semaphore_uk_fsm_tb
-The testbench module verifies the functionality of the semaphore_uk_fsm module by simulating its behavior under various conditions. It monitors the outputs of the traffic light controller and simulates enabling and disabling the semaphore at specific states.
+This repository contains a Verilog implementation of a traffic light controller using an FSM. The code consists of two essential modules: 
+- a traffic light controller module (semaphore_fsm):
+This module defines the traffic light controller FSM with the following states: OFF, RED, RED_YELLOW, GREEN, and YELLOW. The controller transitions between these states based on timing and external enable signals. Each state corresponds to a specific combination of traffic light outputs (red, red-yellow, green, yellow).
+- a testbench module (semaphore_fsm_tb):
+The testbench module verifies the functionality of the semaphore_fsm module by simulating its behavior under various conditions. It monitors the outputs of the traffic light controller and simulates enabling and disabling the semaphore at specific states.
