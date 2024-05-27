@@ -2,14 +2,14 @@
 A Finite State Machine (FSM) is a mathematical model that processes a sequence of inputs over time and produces precise outputs based on those inputs. FSMs are widely used to model circuits and can be implemented in software or hardware.
 There are two common types of FSMs:
 - Moore FSM:
- - Outputs depend solely on the current state.
- - Typically has more states compared to a Mealy machine.
- - Requires more logic to decode the outputs, leading to larger circuit delays.
- - Inputs may exist, but they don't directly affect the outputs.
+  - Outputs depend solely on the current state.
+  - Typically has more states compared to a Mealy machine.
+  - Requires more logic to decode the outputs, leading to larger circuit delays.
+  - Inputs may exist, but they don't directly affect the outputs.
 -Mealy FSM:
- - Outputs depend on both the current state and the current input.
- - Typically has fewer states compared to a Moore machine.
- - Reacts faster to inputs and can check for input conditions in the same clock cycle.
+  - Outputs depend on both the current state and the current input.
+  - Typically has fewer states compared to a Moore machine.
+  - Reacts faster to inputs and can check for input conditions in the same clock cycle.
 </br></br>
 Both types of FSMs have their advantages and are suitable for different applications based on requirements for speed, complexity, and input-output relationships.
 </br>
