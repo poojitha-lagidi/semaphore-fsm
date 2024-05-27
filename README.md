@@ -13,7 +13,7 @@ There are two common types of FSMs:
 
 Both types of FSMs have their advantages and are suitable for different applications based on requirements for speed, complexity, and input-output relationships.
 </br>
-This repository contains a Verilog implementation of a traffic light controller using an FSM. The code consists of two essential modules: 
+This repository contains a Verilog implementation of a traffic light controller using a Mealy FSM. The code consists of two essential modules: 
 - A traffic light controller module (semaphore_fsm):
 This module defines the traffic light controller FSM with the following states: OFF, RED, RED_YELLOW, GREEN, and YELLOW. The controller transitions between these states based on timing and external enable signals. Each state corresponds to a specific combination of traffic light outputs (red, red-yellow, green, yellow).
 - A testbench module (semaphore_fsm_tb):
