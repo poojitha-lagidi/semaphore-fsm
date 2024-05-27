@@ -11,6 +11,7 @@ There are two common types of FSMs:
   - Typically has fewer states compared to a Moore machine.
   - Reacts faster to inputs and can check for input conditions in the same clock cycle.
 </br></br>
+
 Both types of FSMs have their advantages and are suitable for different applications based on requirements for speed, complexity, and input-output relationships.
 </br>
 This repository contains a Verilog implementation of a traffic light controller using a FSM. The traffic light controller follows sequence of traffic lights as follows Red, Red-Yellow, Green, Yellow.
