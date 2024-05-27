@@ -10,7 +10,7 @@ There are two common types of FSMs:
   - Outputs depend on both the current state and the current input.
   - Typically has fewer states compared to a Moore machine.
   - Reacts faster to inputs and can check for input conditions in the same clock cycle.
-</br></br>
+</br>
 
 Both types of FSMs have their advantages and are suitable for different applications based on requirements for speed, complexity, and input-output relationships.
 </br>
