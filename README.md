@@ -1,4 +1,4 @@
-# Semaphore implementaion using finite state machine (FSM)
+# Semaphore implementaion using Finite State Machine (FSM)
 A Finite State Machine (FSM) is a mathematical model that processes a sequence of inputs over time and produces precise outputs based on those inputs. FSMs are widely used to model circuits and can be implemented in software or hardware.
 There are two common types of FSMs:
 - Moore FSM:
