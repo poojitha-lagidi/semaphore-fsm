@@ -9,10 +9,10 @@ module semaphore_fsm(
 	output [4:0] state_out);
 //declared states as parameters
 parameter [4:0] OFF = 5'b00001,
-				RED = 5'b00010,
-				RED_YELLOW = 5'b00100,
-				GREEN = 5'b01000,
-				YELLOW = 5'b10000;
+		RED = 5'b00010,
+		RED_YELLOW = 5'b00100,
+		GREEN = 5'b01000,
+		YELLOW = 5'b10000;
 //declare logic for state machine
 reg [4:0] state;
 reg [4:0] next_state;
@@ -29,43 +29,43 @@ timer_clear = 0;
 case (state) 
 	OFF : begin
 			if(enable) next_state = RED;
-		  end
+	      end
 	RED : begin
-			red = 1;
-			if (timer == 6'd50) begin
-				next_state = RED_YELLOW;
-				timer_clear = 1;
-			end else begin
-				next_state = RED;
-			end
-		  end
+		   red = 1;
+		   if (timer == 6'd50) begin
+			next_state = RED_YELLOW;
+			timer_clear = 1;
+		   end else begin
+			next_state = RED;
+		   end
+	       end
 	RED_YELLOW : begin
-					red_yellow = 1;
-					if (timer == 6'd10) begin
-						next_state = GREEN;
-						timer_clear = 1;
-					end else begin
-						next_state = RED_YELLOW;
-					end
-				 end
+			  red_yellow = 1;
+			  if (timer == 6'd10) begin
+				next_state = GREEN;
+				timer_clear = 1;
+			  end else begin
+				next_state = RED_YELLOW;
+			  end
+	 	      end
 	GREEN : begin
-				green = 1;
-				if (timer == 6'd30) begin
+			green = 1;
+			if (timer == 6'd30) begin
 					next_state = YELLOW;
 					timer_clear = 1;
-				end else begin
+			end else begin
 					next_state = GREEN;
-				end
 			end
+		end
 	YELLOW : begin 
-				yellow = 1;
-				if(timer == 6'd10) begin
+			yellow = 1;
+			if(timer == 6'd10) begin
 					next_state = RED;
 					timer_clear = 1;
-				end else begin
+			end else begin
 					next_state = YELLOW;
-				end
-			 end
+			end
+		 end
 	default : next_state = OFF;
 endcase
 if (!enable) begin
