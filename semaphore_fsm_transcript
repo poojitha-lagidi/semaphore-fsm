@@ -1,0 +1,23 @@
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+#                    0 enable=x, red=0, red_yellow=0, green=0, yellow=0
+#                    2 enable=0, red=0, red_yellow=0, green=0, yellow=0
+#                   11 enable=1, red=0, red_yellow=0, green=0, yellow=0
+#                   12 enable=1, red=1, red_yellow=0, green=0, yellow=0
+#                   63 enable=1, red=0, red_yellow=1, green=0, yellow=0
+#                   74 enable=1, red=0, red_yellow=0, green=1, yellow=0
+#                  105 enable=1, red=0, red_yellow=0, green=0, yellow=1
+#                  116 enable=1, red=1, red_yellow=0, green=0, yellow=0
+#                  167 enable=1, red=0, red_yellow=1, green=0, yellow=0
+#                  178 enable=1, red=0, red_yellow=0, green=1, yellow=0
+#                  209 enable=1, red=0, red_yellow=0, green=0, yellow=1
+#                  220 enable=1, red=1, red_yellow=0, green=0, yellow=0
+#                  271 enable=1, red=0, red_yellow=1, green=0, yellow=0
+#                  272 enable=0, red=0, red_yellow=0, green=0, yellow=0
+#                  283 enable=1, red=0, red_yellow=0, green=0, yellow=0
+#                  284 enable=1, red=1, red_yellow=0, green=0, yellow=0
+# ** Note: $stop    : D:/ModelSim/Udemy Excercises/semaphore-fsm/semaphore_fsm.v(142)
+#    Time: 312500 ns  Iteration: 0  Instance: /semaphore_fsm_tb
+# Break in Module semaphore_fsm_tb at D:/ModelSim/Udemy Excercises/semaphore-fsm/semaphore_fsm.v line 142
