@@ -18,4 +18,4 @@ This repository contains a Verilog implementation of a traffic light controller 
 This module defines the traffic light controller FSM with the following states: OFF, RED, RED_YELLOW, GREEN, and YELLOW. The controller transitions between these states based on timing and external enable signals. Each state corresponds to a specific combination of traffic light outputs (red, red-yellow, green, yellow).
 - A testbench module (semaphore_fsm_tb):
 The testbench module verifies the functionality of the semaphore_fsm module by simulating its behavior under various conditions. It monitors the outputs of the traffic light controller and simulates enabling and disabling the semaphore at specific states.
-![Semaphore_fsm](https://github.com/poojitha-lagidi/semaphore-fsm/assets/160959553/0dc78b6a-35c0-4e01-97c3-b85b90189676)
+![semaphore fsm](https://github.com/poojitha-lagidi/semaphore-fsm/assets/160959553/7b805fb9-7397-4398-8c5b-d277f4cdbe30)
